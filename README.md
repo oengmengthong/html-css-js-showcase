@@ -32,28 +32,26 @@ Open index.html for an interactive menu that previews each showcase.
 - [CSS clip-path creative shapes and hover effects](clip-path/)
 - [Interactive Canvas chart](canvas-svg-charts/)
 - [Accessible modal dialog with focus trapping](modal-dialog/)
+- [Pure CSS responsive card grid](responsive-card-grid/)
+- [CSS only tooltip variations](css-tooltips/)
+- [Animated burger menu with pure CSS](css-burger-menu/)
+- [Responsive image comparison slider (before/after)](image-comparison-slider/)
+- [Sticky table headers & columns](sticky-table/)
+- [CSS variable theming switcher](css-theme-switcher/)
+- [Pure CSS loading animations](css-loading-animations/)
+- [CSS shape divider for sections](css-shape-divider/)
+- [CSS parallax scrolling effect](css-parallax/)
+- [CSS only dropdown navigation](css-dropdown-navigation/)
+- [CSS only image zoom on hover](css-image-zoom/)
+- [CSS text gradient animations](css-text-gradient/)
+- [Responsive split-screen layout](split-screen-layout/)
+- [CSS floating labels for forms](floating-labels/)
+- [Glassmorphism UI effect](glassmorphism/)
 
 ## Planned Showcases
 
-### CSS Layout & Styling
-16. Pure CSS responsive card grid  
-17. CSS only tooltip variations  
-18. Animated burger menu with pure CSS  
-19. Responsive image comparison slider (before/after)  
-20. Sticky table headers & columns  
-21. CSS variable theming switcher  
-22. Pure CSS loading animations  
-23. CSS shape divider for sections  
-24. CSS parallax scrolling effect  
-25. CSS only dropdown navigation  
-26. CSS only image zoom on hover  
-27. CSS text gradient animations  
-28. Responsive split-screen layout  
-29. CSS floating labels for forms  
-30. Glassmorphism UI effect  
-
 ### Media & Graphics
-31. Webcam photo capture using getUserMedia API  
+31. Webcam photo capture using getUserMedia API
 32. Video recording and playback in browser  
 33. Audio recording with live waveform visualizer  
 34. Image filters with CSS & Canvas  

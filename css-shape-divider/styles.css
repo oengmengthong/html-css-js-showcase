@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+section {
+  padding: 4rem 1rem;
+  color: #fff;
+}
+.top {
+  background: #3498db;
+}
+.bottom {
+  background: #2ecc71;
+}
+.divider {
+  position: relative;
+  height: 80px;
+  background: #3498db;
+}
+.divider::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background: #2ecc71;
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}

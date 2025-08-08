@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Comparison Slider</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Image Comparison Slider</h1>
+  <div class="comparison">
+    <img src="https://picsum.photos/800/400?image=10" alt="Before" />
+    <div class="overlay">
+      <img src="https://picsum.photos/800/400?image=20" alt="After" />
+    </div>
+    <input type="range" min="0" max="100" value="50" id="slider" aria-label="Comparison slider" />
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+}
+.zoom {
+  overflow: hidden;
+  width: 400px;
+}
+.zoom img {
+  display: block;
+  width: 100%;
+  transition: transform 0.3s;
+}
+.zoom:hover img {
+  transform: scale(1.2);
+}
