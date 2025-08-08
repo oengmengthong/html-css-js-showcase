@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Native Showcase</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+    nav {
+      width: 260px;
+      overflow-y: auto;
+      border-right: 1px solid #ddd;
+      padding: 1rem;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    nav li {
+      margin-bottom: 0.5rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    #preview {
+      flex: 1;
+    }
+    #preview iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul id="menu"></ul>
+  </nav>
+  <div id="preview">
+    <iframe id="preview-frame" title="Preview"></iframe>
+  </div>
+  <script>
+    async function buildMenu() {
+      try {
+        const res = await fetch('README.md');
+        const text = await res.text();
+        const lines = text.split('\n');
+        const list = document.getElementById('menu');
+        const pattern = /^- \[(.+?)\]\(([^)]+)\)/;
+        lines.forEach(line => {
+          const match = line.match(pattern);
+          if (match) {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            a.textContent = match[1];
+            a.href = '#';
+            a.dataset.link = match[2];
+            a.addEventListener('click', e => {
+              e.preventDefault();
+              document.getElementById('preview-frame').src = a.dataset.link + 'index.html';
+            });
+            li.appendChild(a);
+            list.appendChild(li);
+          }
+        });
+      } catch (e) {
+        console.error('Failed to load menu', e);
+      }
+    }
+    buildMenu();
+  </script>
+</body>
+</html>
