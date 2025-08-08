@@ -32,6 +32,10 @@
     nav a:hover {
       text-decoration: underline;
     }
+    nav a.active {
+      font-weight: bold;
+      color: #007bff;
+    }
     #preview {
       flex: 1;
     }
@@ -57,20 +61,24 @@
         const lines = text.split('\n');
         const list = document.getElementById('menu');
         const pattern = /^- \[(.+?)\]\(([^)]+)\)/;
+        let count = 1;
         lines.forEach(line => {
           const match = line.match(pattern);
           if (match) {
             const li = document.createElement('li');
             const a = document.createElement('a');
-            a.textContent = match[1];
+            a.textContent = `${count}. ${match[1]}`;
             a.href = '#';
             a.dataset.link = match[2];
             a.addEventListener('click', e => {
               e.preventDefault();
               document.getElementById('preview-frame').src = a.dataset.link + 'index.html';
+              document.querySelectorAll('#menu a').forEach(link => link.classList.remove('active'));
+              a.classList.add('active');
             });
             li.appendChild(a);
             list.appendChild(li);
+            count++;
           }
         });
       } catch (e) {
