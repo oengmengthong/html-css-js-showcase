@@ -27,29 +27,13 @@ Open index.html for an interactive menu that previews each showcase.
 - [Canvas drawing app with touch and mouse support](canvas-drawing/)
 - [Web Animations API scripted animations](web-animations/)
 - [Form autosave and restore from localStorage](form-autosave/)
+- [Forms & User Interaction demos](forms-user-interaction/)
 - [Custom video player with speed and captions](video-player/)
 - [CSS clip-path creative shapes and hover effects](clip-path/)
 - [Interactive Canvas chart](canvas-svg-charts/)
 - [Accessible modal dialog with focus trapping](modal-dialog/)
 
 ## Planned Showcases
-
-### Forms & User Interaction
-1. Multi-step form wizard with progress tracking  
-2. Autocomplete search input using datalist  
-3. Inline editable table cells  
-4. Date & time pickers with native `<input>` types  
-5. Range slider with dynamic value display  
-6. Tag input with keyboard navigation  
-7. File drag-and-drop zone with validation  
-8. Print-friendly invoice generator using `@media print`  
-9. Auto-growing textarea  
-10. Password strength meter  
-11. Form with conditional fields (show/hide based on selection)  
-12. Email verification format checker  
-13. Signature pad using `<canvas>`  
-14. Inline markdown editor with preview  
-15. Character counter for text inputs  
 
 ### CSS Layout & Styling
 16. Pure CSS responsive card grid  
