@@ -99,20 +99,18 @@ Open index.html for an interactive menu that previews each showcase.
 - [Hangman word guessing game](hangman/)
 - [Sliding puzzle game](sliding-puzzle/)
 - [Pong game clone](pong/)
+- [Vibration API demo for mobile](vibration-api/)
+- [Battery status API viewer](battery-status/)
+- [Device orientation & motion tracking](device-orientation/)
+- [Ambient light sensor demo](ambient-light-sensor/)
+- [Bluetooth device connection demo](bluetooth-connect/)
+- [USB device connection demo](usb-connect/)
+- [Wake Lock API (prevent screen sleep)](wake-lock/)
+- [Fullscreen API toggle](fullscreen-toggle/)
+- [Picture-in-Picture video mode](picture-in-picture/)
+- [Payment Request API checkout demo](payment-request/)
 
 ## Planned Showcases
-
-### Browser & Device APIs
-81. Vibration API demo for mobile
-82. Battery status API viewer
-83. Device orientation & motion tracking  
-84. Ambient light sensor demo  
-85. Bluetooth device connection demo  
-86. USB device connection demo  
-87. Wake Lock API (prevent screen sleep)  
-88. Fullscreen API toggle  
-89. Picture-in-Picture video mode  
-90. Payment Request API checkout demo  
 
 ### Data Visualization
 91. Pure CSS bar chart  
