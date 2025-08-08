@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+}
+.field {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+input {
+  padding: 1rem 0.5rem 0.5rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+label {
+  position: absolute;
+  left: 0.5rem;
+  top: 1rem;
+  transition: 0.2s;
+  background: #fff;
+  padding: 0 0.25rem;
+  color: #666;
+}
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  top: -0.5rem;
+  font-size: 0.75rem;
+  color: #333;
+}

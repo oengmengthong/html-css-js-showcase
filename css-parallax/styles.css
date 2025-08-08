@@ -1,0 +1,18 @@
+body,
+html {
+  margin: 0;
+}
+.parallax {
+  background-image: url('https://picsum.photos/seed/p1/1200/800');
+  min-height: 60vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.parallax.second {
+  background-image: url('https://picsum.photos/seed/p2/1200/800');
+}
+.content {
+  padding: 3rem;
+  font-family: Arial, sans-serif;
+}

@@ -1,0 +1,21 @@
+:root {
+  --bg: #fff;
+  --fg: #000;
+}
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: Arial, sans-serif;
+  padding: 1rem;
+  transition: background 0.3s, color 0.3s;
+}
+body.dark {
+  --bg: #222;
+  --fg: #eee;
+}
+.controls {
+  margin-bottom: 1rem;
+}
+button {
+  margin-right: 0.5rem;
+}

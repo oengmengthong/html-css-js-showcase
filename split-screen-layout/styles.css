@@ -1,0 +1,30 @@
+body,
+html {
+  margin: 0;
+  height: 100%;
+}
+body {
+  display: flex;
+}
+.split {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+.left {
+  background: #e74c3c;
+}
+.right {
+  background: #8e44ad;
+}
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+  .split {
+    height: 50%;
+  }
+}
