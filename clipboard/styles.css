@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 1rem;
+  background-color: #fafafa;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+}
+
+textarea {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 0.5rem auto;
+}
+
+.buttons {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+#status {
+  text-align: center;
+  margin-top: 0.5rem;
+}
