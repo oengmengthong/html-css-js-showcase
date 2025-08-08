@@ -14,7 +14,19 @@ copyBtn.addEventListener('click', async () => {
 });
 
 pasteBtn.addEventListener('click', async () => {
+  if (!navigator.clipboard) {
+    status.textContent = 'Clipboard API not supported.';
+    return;
+  }
   try {
+    // Check for clipboard-read permission if Permissions API is available
+    if (navigator.permissions) {
+      const permissionStatus = await navigator.permissions.query({ name: 'clipboard-read' });
+      if (permissionStatus.state !== 'granted' && permissionStatus.state !== 'prompt') {
+        status.textContent = 'Clipboard read permission denied.';
+        return;
+      }
+    }
     const text = await navigator.clipboard.readText();
     destination.value = text;
     status.textContent = 'Pasted from clipboard!';
