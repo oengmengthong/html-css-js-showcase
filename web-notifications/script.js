@@ -18,7 +18,14 @@ button.addEventListener('click', async () => {
   }
 
   if (permission === 'granted') {
-    new Notification('Hello from the Web!');
+    const notification = new Notification('Hello from the Web!', {
+      body: 'This is a sample notification body.',
+      icon: 'https://www.example.com/icon.png'
+    });
+    notification.onclick = () => {
+      window.focus();
+      status.textContent = 'Notification clicked!';
+    };
     status.textContent = 'Notification displayed.';
   } else {
     status.textContent = 'Notification permission denied.';
