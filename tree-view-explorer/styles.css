@@ -1,0 +1,13 @@
+body {
+  font-family: sans-serif;
+}
+.tree, .tree ul {
+  list-style: none;
+  padding-left: 1em;
+}
+.tree ul {
+  display: none;
+}
+.toggle {
+  cursor: pointer;
+}

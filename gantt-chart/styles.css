@@ -1,0 +1,43 @@
+body {
+  font-family: sans-serif;
+}
+.gantt {
+  display: flex;
+  max-width: 600px;
+  margin: 2rem;
+}
+.labels {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+.labels div {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.chart {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: 40px;
+  flex: 1;
+  position: relative;
+}
+.chart::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right, rgba(0,0,0,0.1) 1px, transparent 1px);
+  background-size: calc(100% / 8) 100%;
+  pointer-events: none;
+}
+.bar {
+  background: #3498db;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 4px;
+}

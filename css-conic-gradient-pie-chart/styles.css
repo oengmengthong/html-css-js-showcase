@@ -1,0 +1,11 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+.pie {
+  width: 200px;
+  height: 200px;
+  margin: 2rem auto;
+  border-radius: 50%;
+  background: conic-gradient(#e74c3c 0% 40%, #3498db 40% 70%, #2ecc71 70% 100%);
+}

@@ -1,0 +1,8 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+.counter {
+  font-size: 3rem;
+  margin: 2rem 0;
+}
