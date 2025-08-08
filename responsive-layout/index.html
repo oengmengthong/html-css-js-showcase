@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Layout Example</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation">☰</button>
+    <h1>Web Native Showcase</h1>
+  </header>
+
+  <nav id="side-nav" class="side-nav" aria-label="Side navigation">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <section id="home">
+      <h2>Welcome</h2>
+      <p>This layout adjusts to your screen size. Resize the browser window to see the responsiveness in action.</p>
+    </section>
+    <section id="about">
+      <h2>About</h2>
+      <p>The side navigation collapses into a hamburger menu on smaller screens.</p>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Pure HTML, CSS, and JavaScript—no frameworks required.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 Web Native Showcase</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
