@@ -35,7 +35,17 @@ if (SpeechRecognition) {
   });
 
   recognition.addEventListener('error', (event) => {
-    transcriptEl.textContent = 'Error: ' + event.error;
+    const errorMessages = {
+      'no-speech': 'No speech was detected. Please try again.',
+      'audio-capture': 'No microphone was found. Please ensure your microphone is connected.',
+      'not-allowed': 'Microphone access was denied. Please allow microphone access and try again.',
+      'aborted': 'Speech input was aborted. Please try again.',
+      'network': 'A network error occurred. Please check your connection and try again.',
+      'service-not-allowed': 'Speech recognition service was not allowed. Please check your browser settings.',
+      'bad-grammar': 'There was an error in the speech recognition grammar.',
+      'language-not-supported': 'The selected language is not supported.'
+    };
+    transcriptEl.textContent = errorMessages[event.error] || ('An error occurred: ' + event.error);
   });
 }
 
