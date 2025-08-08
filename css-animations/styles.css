@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 1rem;
+  background-color: #fafafa;
+  color: #333;
+  text-align: center;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 2rem auto;
+  background: #3498db;
+  border-radius: 8px;
+  transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.box:hover {
+  background: #2980b9;
+  transform: scale(1.1);
+}
+
+.box.spin {
+  animation: spin 1s linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

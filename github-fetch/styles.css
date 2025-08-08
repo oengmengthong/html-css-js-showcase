@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 1rem;
+  background-color: #fafafa;
+  color: #333;
+  text-align: center;
+}
+
+form {
+  margin-bottom: 1rem;
+}
+
+input {
+  padding: 0.5rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.result img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.result {
+  margin-top: 1rem;
+}
