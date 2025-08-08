@@ -13,8 +13,27 @@ This repository is a playground for showcasing web capabilities using **HTML**, 
 
 ## Planned Showcases
 
-The following ideas are candidates for future demonstrations:
-- *(Add your idea here!)*
+
+	•	Infinite scroll content loading using Intersection Observer API
+	•	Dark mode / light mode toggle with prefers-color-scheme support
+	•	Custom context menu with JavaScript event handling
+	•	File upload with live preview (images, text, PDFs)
+	•	Geolocation API to display user’s current location on a map
+	•	Web Speech API for text-to-speech and speech-to-text
+	•	Offline caching using Service Workers
+	•	Clipboard API for copy and paste functionality
+	•	Web Notifications API with permission handling
+	•	CSS grid-based responsive image masonry layout
+	•	Keyboard shortcut handling for faster navigation
+	•	LocalStorage and SessionStorage for saving user preferences
+	•	Progress bar and loading spinner examples
+	•	HTML5 <canvas> drawing app with touch and mouse support
+	•	Web Animations API for scripted animations
+	•	Form autosave and restore from localStorage
+	•	Video player with custom controls (playback speed, captions)
+	•	CSS clip-path creative shapes and hover effects
+	•	Interactive charts using only Canvas or SVG (no libraries)
+	•	Accessible modal dialog with focus trapping
 
 ## Contributing
 
