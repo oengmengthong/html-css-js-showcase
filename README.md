@@ -64,24 +64,23 @@ Open index.html for an interactive menu that previews each showcase.
 - [Favicon generator from canvas drawing](favicon-generator/)
 - [Color picker & palette generator](color-picker-palette/)
 
-## Planned Showcases
+- [IndexedDB storage demo](indexeddb-storage/)
+- [Fetching & displaying JSON from public APIs](fetch-json/)
+- [Realtime clock & date display](realtime-clock/)
+- [Countdown timer with alarm sound](countdown-timer/)
+- [Stopwatch with lap times](stopwatch/)
+- [Currency converter using API](currency-converter/)
+- [Unit converter (length, weight, temp)](unit-converter/)
+- [Weather display with Geolocation API](weather-geolocation/)
+- [Random quote generator](random-quote/)
+- [Random password generator](random-password/)
+- [Sortable drag-and-drop list](sortable-list/)
+- [Simple Kanban board](kanban-board/)
+- [Detect online/offline status](online-status/)
+- [Text-to-Morse code translator](text-to-morse/)
+- [Browser history API demo](history-api/)
 
-### JavaScript APIs & Data Handling
-46. IndexedDB storage demo  
-47. Fetching & displaying JSON from public APIs  
-48. Realtime clock & date display  
-49. Countdown timer with alarm sound  
-50. Stopwatch with lap times  
-51. Currency converter using API  
-52. Unit converter (length, weight, temp)  
-53. Weather display with Geolocation API  
-54. Random quote generator  
-55. Random password generator  
-56. Sortable drag-and-drop list  
-57. Simple Kanban board  
-58. Detect online/offline status  
-59. Text-to-Morse code translator  
-60. Browser history API demo  
+## Planned Showcases
 
 ### Accessibility & UX
 61. Skip to content link demo  
