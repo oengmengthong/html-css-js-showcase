@@ -1,0 +1,23 @@
+#game {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 50px;
+}
+.card {
+  width: 80px;
+  height: 80px;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  cursor: pointer;
+}
+.card.flipped {
+  background: #fff;
+}
+.card.matched {
+  background: #8f8;
+}

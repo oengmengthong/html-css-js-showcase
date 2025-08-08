@@ -1,0 +1,19 @@
+#grid {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 10px;
+  margin: 20px 0;
+}
+.hole {
+  width: 80px;
+  height: 80px;
+  background: #cfc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  cursor: pointer;
+}
+.mole {
+  background: #f88;
+}

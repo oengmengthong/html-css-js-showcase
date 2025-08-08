@@ -1,0 +1,4 @@
+#choices { display: flex; gap: 10px; justify-content: center; margin-top: 40px; }
+button { font-size: 40px; padding: 10px; cursor: pointer; transition: transform 0.2s; }
+button:hover { transform: scale(1.2); }
+#result { text-align: center; margin-top: 20px; font-size: 20px; }
