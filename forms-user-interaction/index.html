@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forms & User Interaction Demos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Forms & User Interaction Demos</h1>
+
+  <!-- 1. Multi-step form wizard with progress tracking -->
+  <section id="wizard">
+    <h2>Multi-step Form Wizard</h2>
+    <form id="wizard-form">
+      <div class="step active">
+        <label>Name <input type="text" required></label>
+      </div>
+      <div class="step">
+        <label>Email <input type="email" required></label>
+      </div>
+      <div class="step">
+        <p>All done!</p>
+      </div>
+      <div class="buttons">
+        <button type="button" id="prevBtn">Previous</button>
+        <button type="button" id="nextBtn">Next</button>
+      </div>
+      <progress id="progress" value="1" max="3"></progress>
+    </form>
+  </section>
+
+  <!-- 2. Autocomplete search input using datalist -->
+  <section>
+    <h2>Autocomplete Search</h2>
+    <input list="fruit-list" id="autocomplete" placeholder="Pick a fruit" />
+    <datalist id="fruit-list">
+      <option value="Apple"></option>
+      <option value="Banana"></option>
+      <option value="Cherry"></option>
+      <option value="Grape"></option>
+      <option value="Orange"></option>
+    </datalist>
+  </section>
+
+  <!-- 3. Inline editable table cells -->
+  <section>
+    <h2>Inline Editable Table</h2>
+    <table id="editable-table">
+      <tr><th>Name</th><th>Age</th></tr>
+      <tr><td contenteditable>Alice</td><td contenteditable>30</td></tr>
+      <tr><td contenteditable>Bob</td><td contenteditable>25</td></tr>
+    </table>
+  </section>
+
+  <!-- 4. Date & time pickers with native input types -->
+  <section>
+    <h2>Date & Time Pickers</h2>
+    <input type="date" id="date-picker" />
+    <input type="time" id="time-picker" />
+  </section>
+
+  <!-- 5. Range slider with dynamic value display -->
+  <section>
+    <h2>Range Slider</h2>
+    <input type="range" id="range" min="0" max="100" value="50" />
+    <span id="range-value">50</span>
+  </section>
+
+  <!-- 6. Tag input with keyboard navigation -->
+  <section>
+    <h2>Tag Input</h2>
+    <div id="tag-input" class="tag-input">
+      <input type="text" id="tag-field" placeholder="Add a tag and press Enter" />
+    </div>
+  </section>
+
+  <!-- 7. File drag-and-drop zone with validation -->
+  <section>
+    <h2>File Drag & Drop</h2>
+    <div id="drop-zone">Drop an image here</div>
+    <p id="drop-result"></p>
+  </section>
+
+  <!-- 8. Print-friendly invoice generator using @media print -->
+  <section id="invoice">
+    <h2>Invoice</h2>
+    <button id="print-button">Print Invoice</button>
+    <div class="invoice">
+      <table>
+        <tr><th>Item</th><th>Price</th></tr>
+        <tr><td>Widget</td><td>$10.00</td></tr>
+        <tr><td>Gadget</td><td>$15.00</td></tr>
+        <tr><td>Total</td><td>$25.00</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- 9. Auto-growing textarea -->
+  <section>
+    <h2>Auto-growing Textarea</h2>
+    <textarea id="autogrow" rows="1" placeholder="Type here..."></textarea>
+  </section>
+
+  <!-- 10. Password strength meter -->
+  <section>
+    <h2>Password Strength Meter</h2>
+    <input type="password" id="password" />
+    <meter id="strength" min="0" max="4" value="0"></meter>
+  </section>
+
+  <!-- 11. Form with conditional fields -->
+  <section>
+    <h2>Conditional Fields</h2>
+    <label>Contact Method
+      <select id="contact-method">
+        <option value="email">Email</option>
+        <option value="phone">Phone</option>
+        <option value="other">Other</option>
+      </select>
+    </label>
+    <input type="text" id="other-contact" placeholder="Please specify" hidden />
+  </section>
+
+  <!-- 12. Email verification format checker -->
+  <section>
+    <h2>Email Format Checker</h2>
+    <input type="email" id="email-check" placeholder="Enter your email" />
+    <span id="email-msg"></span>
+  </section>
+
+  <!-- 13. Signature pad using canvas -->
+  <section>
+    <h2>Signature Pad</h2>
+    <canvas id="signature" width="300" height="150"></canvas>
+    <button id="clear-signature">Clear</button>
+  </section>
+
+  <!-- 14. Inline markdown editor with preview -->
+  <section>
+    <h2>Markdown Editor</h2>
+    <textarea id="md-input" placeholder="# Heading\n\nSome **bold** text."></textarea>
+    <div id="md-preview"></div>
+  </section>
+
+  <!-- 15. Character counter for text inputs -->
+  <section>
+    <h2>Character Counter</h2>
+    <input type="text" id="char-input" maxlength="100" />
+    <span id="char-count">0/100</span>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
