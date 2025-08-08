@@ -2,6 +2,8 @@
 
 This repository is a playground for showcasing web capabilities using **HTML**, **CSS**, and **JavaScript**. The goal is to collect small, self-contained examples that demonstrate native browser features without relying on external frameworks.
 
+Open index.html for an interactive menu that previews each showcase.
+
 ## Showcases
 
 - [Responsive layout with header, footer, and side navigation](responsive-layout/)
