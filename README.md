@@ -1,15 +1,15 @@
 # Web Native Showcase
 
-This repository is a playground for showcasing web capabilities using **HTML**, **CSS**, and **JavaScript**. The goal is to collect small, self‑contained examples that demonstrate native browser features without relying on external frameworks.
+This repository is a playground for showcasing web capabilities using **HTML**, **CSS**, and **JavaScript**. The goal is to collect small, self-contained examples that demonstrate native browser features without relying on external frameworks.
 
 ## Showcases
 
 - [Responsive layout with header, footer, and side navigation](responsive-layout/)
 - [Interactive image gallery with lightbox effect](image-gallery/)
-- [Sign‑up form with built‑in and custom validation](form-validation/)
+- [Sign-up form with built-in and custom validation](form-validation/)
 - [CSS animations and transitions triggered by user interaction](css-animations/)
 - [Fetch API example retrieving GitHub user data](github-fetch/)
-- [Simple drag‑and‑drop interface](drag-and-drop/)
+- [Simple drag-and-drop interface](drag-and-drop/)
 - [Infinite scroll content loading using Intersection Observer API](infinite-scroll/)
 - [Clipboard copy and paste demo](clipboard/)
 - [Web Notifications with permission request](web-notifications/)
@@ -32,7 +32,121 @@ This repository is a playground for showcasing web capabilities using **HTML**, 
 
 ## Planned Showcases
 
-None currently planned.
+### Forms & User Interaction
+1. Multi-step form wizard with progress tracking  
+2. Autocomplete search input using datalist  
+3. Inline editable table cells  
+4. Date & time pickers with native `<input>` types  
+5. Range slider with dynamic value display  
+6. Tag input with keyboard navigation  
+7. File drag-and-drop zone with validation  
+8. Print-friendly invoice generator using `@media print`  
+9. Auto-growing textarea  
+10. Password strength meter  
+11. Form with conditional fields (show/hide based on selection)  
+12. Email verification format checker  
+13. Signature pad using `<canvas>`  
+14. Inline markdown editor with preview  
+15. Character counter for text inputs  
+
+### CSS Layout & Styling
+16. Pure CSS responsive card grid  
+17. CSS only tooltip variations  
+18. Animated burger menu with pure CSS  
+19. Responsive image comparison slider (before/after)  
+20. Sticky table headers & columns  
+21. CSS variable theming switcher  
+22. Pure CSS loading animations  
+23. CSS shape divider for sections  
+24. CSS parallax scrolling effect  
+25. CSS only dropdown navigation  
+26. CSS only image zoom on hover  
+27. CSS text gradient animations  
+28. Responsive split-screen layout  
+29. CSS floating labels for forms  
+30. Glassmorphism UI effect  
+
+### Media & Graphics
+31. Webcam photo capture using getUserMedia API  
+32. Video recording and playback in browser  
+33. Audio recording with live waveform visualizer  
+34. Image filters with CSS & Canvas  
+35. Lazy loading images with `loading="lazy"`  
+36. Screen capture with Screen Capture API  
+37. Animated SVG icons  
+38. Inline SVG drawing animations  
+39. Image sprite hover animation  
+40. Convert image to grayscale and revert on hover  
+41. Pan & zoom image viewer  
+42. Generate QR code from text input  
+43. Capture frame from video and save as image  
+44. Favicon generator from canvas drawing  
+45. Color picker & palette generator  
+
+### JavaScript APIs & Data Handling
+46. IndexedDB storage demo  
+47. Fetching & displaying JSON from public APIs  
+48. Realtime clock & date display  
+49. Countdown timer with alarm sound  
+50. Stopwatch with lap times  
+51. Currency converter using API  
+52. Unit converter (length, weight, temp)  
+53. Weather display with Geolocation API  
+54. Random quote generator  
+55. Random password generator  
+56. Sortable drag-and-drop list  
+57. Simple Kanban board  
+58. Detect online/offline status  
+59. Text-to-Morse code translator  
+60. Browser history API demo  
+
+### Accessibility & UX
+61. Skip to content link demo  
+62. High-contrast mode toggle  
+63. Text size adjuster  
+64. Keyboard-only navigation demo  
+65. ARIA live region announcements  
+66. Voice commands using SpeechRecognition API  
+67. Focus highlight for form elements  
+68. Accessible accordion component  
+69. Accessible tabs with ARIA roles  
+70. Read aloud selected text  
+
+### Games & Fun
+71. Memory match card game  
+72. Tic-tac-toe game  
+73. Snake game  
+74. Whack-a-mole game  
+75. 2048 game clone  
+76. Simon Says color memory game  
+77. Rock-paper-scissors with animations  
+78. Hangman word guessing game  
+79. Sliding puzzle game  
+80. Pong game clone  
+
+### Browser & Device APIs
+81. Vibration API demo for mobile  
+82. Battery status API viewer  
+83. Device orientation & motion tracking  
+84. Ambient light sensor demo  
+85. Bluetooth device connection demo  
+86. USB device connection demo  
+87. Wake Lock API (prevent screen sleep)  
+88. Fullscreen API toggle  
+89. Picture-in-Picture video mode  
+90. Payment Request API checkout demo  
+
+### Data Visualization
+91. Pure CSS bar chart  
+92. CSS conic gradient pie chart  
+93. Canvas line chart from JSON data  
+94. Real-time updating chart with WebSockets  
+95. Interactive map using `<map>` and `<area>`  
+96. HTML table to CSV export  
+97. Heatmap with Canvas  
+98. Animated number counter  
+99. Gantt chart with HTML/CSS  
+100. Tree view folder explorer  
 
 ## Contributing
 
