@@ -1,0 +1,16 @@
+body {
+  font-family: sans-serif;
+  padding: 1rem;
+}
+input, textarea {
+  display: block;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+input:focus, textarea:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 3px #007BFF;
+  outline: none;
+}

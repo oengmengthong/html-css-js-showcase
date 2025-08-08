@@ -47,6 +47,16 @@ Open index.html for an interactive menu that previews each showcase.
 - [Responsive split-screen layout](split-screen-layout/)
 - [CSS floating labels for forms](floating-labels/)
 - [Glassmorphism UI effect](glassmorphism/)
+- [Skip to content link](skip-to-content/)
+- [High-contrast mode toggle](high-contrast-toggle/)
+- [Text size adjuster](text-size-adjuster/)
+- [Keyboard-only navigation demo](keyboard-only-navigation/)
+- [ARIA live region announcements](aria-live-region/)
+- [Voice commands using SpeechRecognition API](voice-commands/)
+- [Focus highlight for form elements](focus-highlight/)
+- [Accessible accordion component](accessible-accordion/)
+- [Accessible tabs with ARIA roles](accessible-tabs/)
+- [Read aloud selected text](read-aloud/)
 
 - [Webcam photo capture using getUserMedia API](webcam-photo-capture/)
 - [Video recording and playback in browser](video-recording/)
@@ -82,20 +92,8 @@ Open index.html for an interactive menu that previews each showcase.
 
 ## Planned Showcases
 
-### Accessibility & UX
-61. Skip to content link demo  
-62. High-contrast mode toggle  
-63. Text size adjuster  
-64. Keyboard-only navigation demo  
-65. ARIA live region announcements  
-66. Voice commands using SpeechRecognition API  
-67. Focus highlight for form elements  
-68. Accessible accordion component  
-69. Accessible tabs with ARIA roles  
-70. Read aloud selected text  
-
 ### Games & Fun
-71. Memory match card game  
+71. Memory match card game
 72. Tic-tac-toe game  
 73. Snake game  
 74. Whack-a-mole game  

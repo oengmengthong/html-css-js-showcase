@@ -1,0 +1,13 @@
+body {
+  font-family: sans-serif;
+  padding: 1rem;
+}
+.accordion-trigger {
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+[hidden] {
+  display: none;
+}

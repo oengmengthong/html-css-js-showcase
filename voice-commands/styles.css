@@ -1,0 +1,8 @@
+body {
+  font-family: sans-serif;
+  padding: 1rem;
+  transition: background 0.3s;
+}
+button {
+  margin-bottom: 1rem;
+}
