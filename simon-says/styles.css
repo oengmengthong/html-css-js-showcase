@@ -1,0 +1,19 @@
+#board {
+  width: 200px;
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 20px auto;
+}
+.pad {
+  width: 90px;
+  height: 90px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+#green { background: green; }
+#red { background: red; }
+#yellow { background: yellow; }
+#blue { background: blue; }
+.pad.active { opacity: 1; }

@@ -89,24 +89,22 @@ Open index.html for an interactive menu that previews each showcase.
 - [Detect online/offline status](online-status/)
 - [Text-to-Morse code translator](text-to-morse/)
 - [Browser history API demo](history-api/)
+- [Memory match card game](memory-match/)
+- [Tic-tac-toe game](tic-tac-toe/)
+- [Snake game](snake-game/)
+- [Whack-a-mole game](whack-a-mole/)
+- [2048 game clone](2048/)
+- [Simon Says color memory game](simon-says/)
+- [Rock-paper-scissors with animations](rock-paper-scissors/)
+- [Hangman word guessing game](hangman/)
+- [Sliding puzzle game](sliding-puzzle/)
+- [Pong game clone](pong/)
 
 ## Planned Showcases
 
-### Games & Fun
-71. Memory match card game
-72. Tic-tac-toe game  
-73. Snake game  
-74. Whack-a-mole game  
-75. 2048 game clone  
-76. Simon Says color memory game  
-77. Rock-paper-scissors with animations  
-78. Hangman word guessing game  
-79. Sliding puzzle game  
-80. Pong game clone  
-
 ### Browser & Device APIs
-81. Vibration API demo for mobile  
-82. Battery status API viewer  
+81. Vibration API demo for mobile
+82. Battery status API viewer
 83. Device orientation & motion tracking  
 84. Ambient light sensor demo  
 85. Bluetooth device connection demo  
