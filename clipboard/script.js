@@ -5,6 +5,10 @@ const destination = document.getElementById('destination');
 const status = document.getElementById('status');
 
 copyBtn.addEventListener('click', async () => {
+  if (!navigator.clipboard) {
+    status.textContent = 'Clipboard API not supported in this browser.';
+    return;
+  }
   try {
     await navigator.clipboard.writeText(source.value);
     status.textContent = 'Copied to clipboard!';
