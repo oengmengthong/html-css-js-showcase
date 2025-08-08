@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Audio Recording</title>
+  <style>
+    canvas { border:1px solid #ccc; display:block; margin-top:1rem; }
+  </style>
+</head>
+<body>
+  <h1>Audio Recorder with Waveform</h1>
+  <button id="record">Start</button>
+  <button id="stop" disabled>Stop</button>
+  <audio id="audio" controls></audio>
+  <canvas id="visualizer" width="400" height="100"></canvas>
+  <script>
+    const record = document.getElementById('record');
+    const stop = document.getElementById('stop');
+    const audio = document.getElementById('audio');
+    const canvas = document.getElementById('visualizer');
+    const canvasCtx = canvas.getContext('2d');
+    let recorder, chunks = [], analyser, dataArray;
+    navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => {
+      const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      const source = audioCtx.createMediaStreamSource(stream);
+      analyser = audioCtx.createAnalyser();
+      source.connect(analyser);
+      analyser.fftSize = 2048;
+      dataArray = new Uint8Array(analyser.fftSize);
+      function draw() {
+        requestAnimationFrame(draw);
+        analyser.getByteTimeDomainData(dataArray);
+        canvasCtx.fillStyle = '#fff';
+        canvasCtx.fillRect(0, 0, canvas.width, canvas.height);
+        canvasCtx.lineWidth = 2;
+        canvasCtx.strokeStyle = '#000';
+        canvasCtx.beginPath();
+        const sliceWidth = canvas.width / dataArray.length;
+        let x = 0;
+        for (let i = 0; i < dataArray.length; i++) {
+          const v = dataArray[i] / 128.0;
+          const y = v * canvas.height / 2;
+          if (i === 0) canvasCtx.moveTo(x, y);
+          else canvasCtx.lineTo(x, y);
+          x += sliceWidth;
+        }
+        canvasCtx.lineTo(canvas.width, canvas.height / 2);
+        canvasCtx.stroke();
+      }
+      draw();
+      recorder = new MediaRecorder(stream);
+      recorder.ondataavailable = e => chunks.push(e.data);
+      recorder.onstop = () => {
+        const blob = new Blob(chunks, { type: 'audio/ogg; codecs=opus' });
+        audio.src = URL.createObjectURL(blob);
+        chunks = [];
+      };
+      record.onclick = () => { recorder.start(); record.disabled = true; stop.disabled = false; };
+      stop.onclick = () => { recorder.stop(); record.disabled = false; stop.disabled = true; };
+    }).catch(err => console.error('Mic error', err));
+  </script>
+</body>
+</html>

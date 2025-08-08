@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lazy Loading Images</title>
+  <style>
+    img { display:block; margin:20px auto; max-width:100%; }
+  </style>
+</head>
+<body>
+  <h1>Lazy Loading Images</h1>
+  <p>Images below use the <code>loading="lazy"</code> attribute. Scroll down to load them.</p>
+  <div style="height:1000px">Scroll down...</div>
+  <img src="https://picsum.photos/400/300?random=1" loading="lazy" alt="Random 1" />
+  <img src="https://picsum.photos/400/300?random=2" loading="lazy" alt="Random 2" />
+  <img src="https://picsum.photos/400/300?random=3" loading="lazy" alt="Random 3" />
+  <img src="https://picsum.photos/400/300?random=4" loading="lazy" alt="Random 4" />
+  <img src="https://picsum.photos/400/300?random=5" loading="lazy" alt="Random 5" />
+</body>
+</html>

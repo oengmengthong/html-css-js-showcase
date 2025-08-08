@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grayscale Hover</title>
+  <style>
+    img { max-width:100%; display:block; margin:1rem auto; }
+    .gray { filter:grayscale(100%); transition:filter .3s; }
+    .gray:hover { filter:none; }
+  </style>
+</head>
+<body>
+  <h1>Convert Image to Grayscale and Revert on Hover</h1>
+  <img class="gray" src="https://picsum.photos/400/300" alt="sample" />
+</body>
+</html>

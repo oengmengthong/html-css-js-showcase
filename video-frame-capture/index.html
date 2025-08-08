@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Frame Capture</title>
+  <style>
+    video, canvas { max-width:100%; display:block; margin-top:1rem; }
+    #download { display:none; margin-top:1rem; }
+  </style>
+</head>
+<body>
+  <h1>Capture Frame from Video</h1>
+  <input type="file" id="file" accept="video/*" />
+  <video id="video" controls></video>
+  <button id="capture">Capture Frame</button>
+  <canvas id="canvas"></canvas>
+  <a id="download" download="frame.png">Download Image</a>
+  <script>
+    const file = document.getElementById('file');
+    const video = document.getElementById('video');
+    const canvas = document.getElementById('canvas');
+    const capture = document.getElementById('capture');
+    const download = document.getElementById('download');
+    file.onchange = e => {
+      const f = e.target.files[0];
+      if (f) {
+        video.src = URL.createObjectURL(f);
+      }
+    };
+    capture.onclick = () => {
+      canvas.width = video.videoWidth;
+      canvas.height = video.videoHeight;
+      canvas.getContext('2d').drawImage(video, 0, 0);
+      download.href = canvas.toDataURL('image/png');
+      download.style.display = 'inline';
+    };
+  </script>
+</body>
+</html>

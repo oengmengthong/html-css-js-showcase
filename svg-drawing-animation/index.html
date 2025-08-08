@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SVG Drawing Animation</title>
+  <style>
+    svg { width:100%; max-width:400px; }
+    #line { stroke:tomato; stroke-width:4; fill:none; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+  </style>
+</head>
+<body>
+  <h1>Inline SVG Drawing Animation</h1>
+  <svg viewBox="0 0 200 100">
+    <path id="line" d="M10 90 Q100 10 190 90" />
+  </svg>
+  <script>
+    const path = document.getElementById('line');
+    const length = path.getTotalLength();
+    path.style.strokeDasharray = length;
+    path.style.strokeDashoffset = length;
+    path.getBoundingClientRect();
+    path.style.animation = 'draw 3s linear forwards';
+  </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animated SVG Icons</title>
+  <style>
+    svg { width:80px; height:80px; margin:1rem; }
+    .spin { animation: spin 2s linear infinite; }
+    @keyframes spin { from{transform:rotate(0);} to{transform:rotate(360deg);} }
+  </style>
+</head>
+<body>
+  <h1>Animated SVG Icons</h1>
+  <svg class="spin" viewBox="0 0 100 100">
+    <polygon points="50,15 61,39 88,39 66,57 74,85 50,69 26,85 34,57 12,39 39,39" fill="gold" stroke="black"/>
+  </svg>
+  <svg viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="20" fill="skyblue">
+      <animate attributeName="r" values="20;30;20" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+  </svg>
+</body>
+</html>

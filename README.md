@@ -48,24 +48,23 @@ Open index.html for an interactive menu that previews each showcase.
 - [CSS floating labels for forms](floating-labels/)
 - [Glassmorphism UI effect](glassmorphism/)
 
-## Planned Showcases
+- [Webcam photo capture using getUserMedia API](webcam-photo-capture/)
+- [Video recording and playback in browser](video-recording/)
+- [Audio recording with live waveform visualizer](audio-recording/)
+- [Image filters with CSS & Canvas](image-filters/)
+- [Lazy loading images with `loading="lazy"`](lazy-loading-images/)
+- [Screen capture with Screen Capture API](screen-capture/)
+- [Animated SVG icons](animated-svg-icons/)
+- [Inline SVG drawing animations](svg-drawing-animation/)
+- [Image sprite hover animation](image-sprite-hover/)
+- [Convert image to grayscale and revert on hover](grayscale-hover/)
+- [Pan & zoom image viewer](pan-zoom-image/)
+- [Generate QR code from text input](qr-code-generator/)
+- [Capture frame from video and save as image](video-frame-capture/)
+- [Favicon generator from canvas drawing](favicon-generator/)
+- [Color picker & palette generator](color-picker-palette/)
 
-### Media & Graphics
-31. Webcam photo capture using getUserMedia API
-32. Video recording and playback in browser  
-33. Audio recording with live waveform visualizer  
-34. Image filters with CSS & Canvas  
-35. Lazy loading images with `loading="lazy"`  
-36. Screen capture with Screen Capture API  
-37. Animated SVG icons  
-38. Inline SVG drawing animations  
-39. Image sprite hover animation  
-40. Convert image to grayscale and revert on hover  
-41. Pan & zoom image viewer  
-42. Generate QR code from text input  
-43. Capture frame from video and save as image  
-44. Favicon generator from canvas drawing  
-45. Color picker & palette generator  
+## Planned Showcases
 
 ### JavaScript APIs & Data Handling
 46. IndexedDB storage demo  

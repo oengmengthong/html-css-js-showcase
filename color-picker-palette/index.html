@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Color Picker & Palette</title>
+  <style>
+    #palette div { width:40px; height:40px; display:inline-block; }
+  </style>
+</head>
+<body>
+  <h1>Color Picker &amp; Palette Generator</h1>
+  <input type="color" id="picker" value="#ff0000" />
+  <div id="palette"></div>
+  <script>
+    const picker = document.getElementById('picker');
+    const palette = document.getElementById('palette');
+    function shadeColor(color, percent) {
+      let num = parseInt(color.slice(1), 16);
+      let r = (num >> 16) + percent;
+      let g = (num >> 8 & 0x00FF) + percent;
+      let b = (num & 0x0000FF) + percent;
+      r = Math.min(255, Math.max(0, r));
+      g = Math.min(255, Math.max(0, g));
+      b = Math.min(255, Math.max(0, b));
+      return '#' + (r << 16 | g << 8 | b).toString(16).padStart(6, '0');
+    }
+    function update() {
+      palette.innerHTML = '';
+      for (let i = -2; i <= 2; i++) {
+        const div = document.createElement('div');
+        div.style.background = shadeColor(picker.value, i * 20);
+        palette.appendChild(div);
+      }
+    }
+    picker.addEventListener('input', update);
+    update();
+  </script>
+</body>
+</html>

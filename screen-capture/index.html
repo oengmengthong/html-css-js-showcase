@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Screen Capture</title>
+  <style>
+    video { max-width:100%; display:block; margin-top:1rem; }
+  </style>
+</head>
+<body>
+  <h1>Screen Capture API</h1>
+  <button id="start">Start Capture</button>
+  <button id="stop" disabled>Stop Capture</button>
+  <video id="screen" autoplay></video>
+  <script>
+    const start = document.getElementById('start');
+    const stop = document.getElementById('stop');
+    const video = document.getElementById('screen');
+    let stream;
+    start.onclick = async () => {
+      try {
+        stream = await navigator.mediaDevices.getDisplayMedia({ video: true });
+        video.srcObject = stream;
+        start.disabled = true;
+        stop.disabled = false;
+      } catch (err) {
+        console.error('Capture error', err);
+      }
+    };
+    stop.onclick = () => {
+      stream.getTracks().forEach(t => t.stop());
+      video.srcObject = null;
+      start.disabled = false;
+      stop.disabled = true;
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Sprite Hover</title>
+  <style>
+    .sprite {
+      width:32px; height:32px;
+      background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSIzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSJyZWQiLz48cmVjdCB4PSIzMiIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSJibHVlIi8+PC9zdmc+');
+      background-size:64px 32px;
+      transition:background-position .3s steps(1);
+    }
+    .sprite:hover { background-position:-32px 0; }
+  </style>
+</head>
+<body>
+  <h1>Image Sprite Hover Animation</h1>
+  <div class="sprite"></div>
+</body>
+</html>
