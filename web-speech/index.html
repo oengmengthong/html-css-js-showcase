@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Speech API Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Web Speech API Demo</h1>
+
+  <section>
+    <h2>Text to Speech</h2>
+    <textarea id="tts-text" rows="4" placeholder="Enter text to speak"></textarea>
+    <div class="buttons">
+      <button id="speak">Speak</button>
+      <button id="stop-speak">Stop</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>Speech to Text</h2>
+    <div class="buttons">
+      <button id="start-listen">Start Listening</button>
+      <button id="stop-listen">Stop Listening</button>
+    </div>
+    <p id="transcript" aria-live="polite"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
