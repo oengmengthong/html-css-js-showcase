@@ -1,0 +1,8 @@
+body {
+  font-family: sans-serif;
+  padding: 1rem;
+}
+.live-region {
+  margin-top: 1rem;
+  min-height: 1.5em;
+}

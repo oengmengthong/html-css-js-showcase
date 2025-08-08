@@ -1,0 +1,14 @@
+body {
+  font-family: sans-serif;
+  padding: 1rem;
+}
+body.high-contrast {
+  background: #000;
+  color: #fff;
+}
+body.high-contrast a {
+  color: #0ff;
+}
+button {
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,13 @@
+body {
+  font-family: sans-serif;
+  padding: 1rem;
+}
+#menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+#menu a:focus {
+  outline: 2px solid blue;
+}
