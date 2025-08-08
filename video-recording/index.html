@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Recording</title>
+  <style>
+    video { max-width: 100%; display:block; margin-bottom:1rem; }
+  </style>
+</head>
+<body>
+  <h1>Video Recording</h1>
+  <video id="preview" autoplay muted></video>
+  <button id="start">Start Recording</button>
+  <button id="stop" disabled>Stop</button>
+  <video id="playback" controls></video>
+  <script>
+    const preview = document.getElementById('preview');
+    const playback = document.getElementById('playback');
+    const startBtn = document.getElementById('start');
+    const stopBtn = document.getElementById('stop');
+    let recorder;
+    let chunks = [];
+    navigator.mediaDevices.getUserMedia({ video: true, audio: true }).then(stream => {
+      preview.srcObject = stream;
+      recorder = new MediaRecorder(stream);
+      recorder.ondataavailable = e => chunks.push(e.data);
+      recorder.onstop = () => {
+        const blob = new Blob(chunks, { type: 'video/webm' });
+        playback.src = URL.createObjectURL(blob);
+        chunks = [];
+      };
+    }).catch(err => console.error('Media error', err));
+    startBtn.onclick = () => { recorder.start(); startBtn.disabled = true; stopBtn.disabled = false; };
+    stopBtn.onclick = () => { recorder.stop(); startBtn.disabled = false; stopBtn.disabled = true; };
+  </script>
+</body>
+</html>

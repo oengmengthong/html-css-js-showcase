@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Filters</title>
+  <style>
+    img, canvas { max-width:100%; display:block; margin-top:1rem; }
+  </style>
+</head>
+<body>
+  <h1>Image Filters with CSS & Canvas</h1>
+  <label for="filter">Choose filter:</label>
+  <select id="filter">
+    <option value="none">None</option>
+    <option value="grayscale(1)">Grayscale</option>
+    <option value="sepia(1)">Sepia</option>
+    <option value="invert(1)">Invert</option>
+    <option value="blur(5px)">Blur</option>
+  </select>
+  <img id="photo" src="https://picsum.photos/400/300" alt="sample" />
+  <canvas id="canvas"></canvas>
+  <script>
+    const img = document.getElementById('photo');
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    const filterSelect = document.getElementById('filter');
+    img.onload = () => {
+      canvas.width = img.width;
+      canvas.height = img.height;
+      ctx.drawImage(img, 0, 0);
+    };
+    filterSelect.onchange = () => {
+      const val = filterSelect.value;
+      img.style.filter = val;
+      ctx.filter = val;
+      ctx.drawImage(img, 0, 0);
+    };
+  </script>
+</body>
+</html>

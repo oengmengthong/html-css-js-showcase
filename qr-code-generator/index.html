@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR Code Generator</title>
+  <style>
+    #qrcode { margin-top:1rem; }
+  </style>
+</head>
+<body>
+  <h1>Generate QR Code from Text</h1>
+  <input id="text" placeholder="Enter text" />
+  <div id="qrcode"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script>
+    const qrcode = new QRCode(document.getElementById('qrcode'));
+    const input = document.getElementById('text');
+    input.addEventListener('input', () => qrcode.makeCode(input.value));
+  </script>
+</body>
+</html>
