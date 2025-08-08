@@ -7,13 +7,14 @@ This repository is a playground for showcasing web capabilities using **HTML**, 
 - [Responsive layout with header, footer, and side navigation](responsive-layout/)
 - [Interactive image gallery with lightbox effect](image-gallery/)
 - [Sign‑up form with built‑in and custom validation](form-validation/)
+- [CSS animations and transitions triggered by user interaction](css-animations/)
+- [Fetch API example retrieving GitHub user data](github-fetch/)
+- [Simple drag‑and‑drop interface](drag-and-drop/)
 
 ## Planned Showcases
 
 The following ideas are candidates for future demonstrations:
-- CSS animations and transitions triggered by user interaction.
-- Fetch API example retrieving and displaying remote data.
-- Simple drag‑and‑drop interface.
+- *(Add your idea here!)*
 
 ## Contributing
 
