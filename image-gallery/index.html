@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Image Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Interactive Image Gallery</h1>
+  <div class="gallery">
+    <img src="https://picsum.photos/id/1015/300/200" data-large="https://picsum.photos/id/1015/900/600" alt="Mountain" />
+    <img src="https://picsum.photos/id/1016/300/200" data-large="https://picsum.photos/id/1016/900/600" alt="Forest" />
+    <img src="https://picsum.photos/id/1025/300/200" data-large="https://picsum.photos/id/1025/900/600" alt="Horse" />
+    <img src="https://picsum.photos/id/1035/300/200" data-large="https://picsum.photos/id/1035/900/600" alt="River" />
+    <img src="https://picsum.photos/id/1050/300/200" data-large="https://picsum.photos/id/1050/900/600" alt="Desert" />
+    <img src="https://picsum.photos/id/1069/300/200" data-large="https://picsum.photos/id/1069/900/600" alt="Bridge" />
+  </div>
+
+  <div id="lightbox" class="lightbox hidden" aria-hidden="true">
+    <button id="close" class="close" aria-label="Close image">&times;</button>
+    <button id="prev" class="nav prev" aria-label="Previous image">&#10094;</button>
+    <img id="lightbox-img" alt="" />
+    <button id="next" class="nav next" aria-label="Next image">&#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -5,12 +5,11 @@ This repository is a playground for showcasing web capabilities using **HTML**, 
 ## Showcases
 
 - [Responsive layout with header, footer, and side navigation](responsive-layout/)
+- [Interactive image gallery with lightbox effect](image-gallery/)
 
 ## Planned Showcases
 
 The following ideas are candidates for future demonstrations:
-
-- Interactive image gallery with lightbox effect.
 - Form validation using HTML5 attributes and JavaScript enhancements.
 - CSS animations and transitions triggered by user interaction.
 - Fetch API example retrieving and displaying remote data.
