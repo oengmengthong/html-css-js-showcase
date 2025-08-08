@@ -10,11 +10,11 @@ This repository is a playground for showcasing web capabilities using **HTML**, 
 - [CSS animations and transitions triggered by user interaction](css-animations/)
 - [Fetch API example retrieving GitHub user data](github-fetch/)
 - [Simple drag‑and‑drop interface](drag-and-drop/)
+- [Infinite scroll content loading using Intersection Observer API](infinite-scroll/)
 
 ## Planned Showcases
 
 
-	•	Infinite scroll content loading using Intersection Observer API
 	•	Dark mode / light mode toggle with prefers-color-scheme support
 	•	Custom context menu with JavaScript event handling
 	•	File upload with live preview (images, text, PDFs)

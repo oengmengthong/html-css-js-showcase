@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 1rem;
+  background-color: #fafafa;
+  color: #333;
+}
+
+.repo-list {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.repo {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.repo a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+#sentinel {
+  height: 1px;
+}
