@@ -1,0 +1,12 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #fff;
+  color: #000;
+}
+
+body[data-theme="dark"] {
+  background: #222;
+  color: #fff;
+}

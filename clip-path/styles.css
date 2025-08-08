@@ -1,0 +1,33 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.shapes {
+  display: flex;
+  gap: 20px;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  transition: clip-path 0.5s;
+}
+
+.circle {
+  clip-path: circle(50%);
+}
+
+.circle:hover {
+  clip-path: ellipse(50% 40%);
+}
+
+.polygon {
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
+.polygon:hover {
+  clip-path: polygon(50% 0, 80% 100%, 20% 100%);
+}

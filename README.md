@@ -18,21 +18,21 @@ This repository is a playground for showcasing web capabilities using **HTML**, 
 - [Geolocation API to display user’s current location on a map](geolocation/)
 - [Dark mode toggle with prefers-color-scheme](dark-mode-toggle/)
 - [Custom context menu](custom-context-menu/)
+- [CSS grid-based responsive masonry image layout](css-grid-masonry/)
+- [Keyboard shortcut navigation](keyboard-shortcuts/)
+- [Save preferences with LocalStorage and SessionStorage](storage-preferences/)
+- [Progress bar and loading spinner](progress-loading/)
+- [Canvas drawing app with touch and mouse support](canvas-drawing/)
+- [Web Animations API scripted animations](web-animations/)
+- [Form autosave and restore from localStorage](form-autosave/)
+- [Custom video player with speed and captions](video-player/)
+- [CSS clip-path creative shapes and hover effects](clip-path/)
+- [Interactive Canvas chart](canvas-svg-charts/)
+- [Accessible modal dialog with focus trapping](modal-dialog/)
 
 ## Planned Showcases
 
-
-	•	CSS grid-based responsive image masonry layout
-	•	Keyboard shortcut handling for faster navigation
-	•	LocalStorage and SessionStorage for saving user preferences
-	•	Progress bar and loading spinner examples
-	•	HTML5 <canvas> drawing app with touch and mouse support
-	•	Web Animations API for scripted animations
-	•	Form autosave and restore from localStorage
-	•	Video player with custom controls (playback speed, captions)
-	•	CSS clip-path creative shapes and hover effects
-	•	Interactive charts using only Canvas or SVG (no libraries)
-	•	Accessible modal dialog with focus trapping
+None currently planned.
 
 ## Contributing
 
