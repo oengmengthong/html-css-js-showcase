@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Video Player</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Custom Video Player</h1>
+  <video id="video" width="400">
+    <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+    <track src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.vtt" kind="captions" srclang="en" label="English" />
+  </video>
+  <div class="controls">
+    <button id="play">Play</button>
+    <label>Speed
+      <select id="speed">
+        <option value="0.5">0.5x</option>
+        <option value="1" selected>1x</option>
+        <option value="1.5">1.5x</option>
+        <option value="2">2x</option>
+      </select>
+    </label>
+    <label><input type="checkbox" id="captions" checked /> Captions</label>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
