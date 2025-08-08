@@ -109,20 +109,16 @@ Open index.html for an interactive menu that previews each showcase.
 - [Fullscreen API toggle](fullscreen-toggle/)
 - [Picture-in-Picture video mode](picture-in-picture/)
 - [Payment Request API checkout demo](payment-request/)
-
-## Planned Showcases
-
-### Data Visualization
-91. Pure CSS bar chart  
-92. CSS conic gradient pie chart  
-93. Canvas line chart from JSON data  
-94. Real-time updating chart with WebSockets  
-95. Interactive map using `<map>` and `<area>`  
-96. HTML table to CSV export  
-97. Heatmap with Canvas  
-98. Animated number counter  
-99. Gantt chart with HTML/CSS  
-100. Tree view folder explorer  
+- [Pure CSS bar chart](css-bar-chart/)
+- [CSS conic gradient pie chart](css-conic-gradient-pie-chart/)
+- [Canvas line chart from JSON data](canvas-line-chart/)
+- [Real-time updating chart with WebSockets](websocket-chart/)
+- [Interactive map using `<map>` and `<area>`](interactive-image-map/)
+- [HTML table to CSV export](table-to-csv/)
+- [Heatmap with Canvas](canvas-heatmap/)
+- [Animated number counter](animated-counter/)
+- [Gantt chart with HTML/CSS](gantt-chart/)
+- [Tree view folder explorer](tree-view-explorer/)
 
 ## Contributing
 
