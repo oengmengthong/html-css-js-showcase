@@ -1,0 +1,33 @@
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 0.5rem 0;
+  list-style: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  min-width: 150px;
+  z-index: 1000;
+}
+
+.menu.hidden {
+  display: none;
+}
+
+.menu-item {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  background: #f0f0f0;
+}

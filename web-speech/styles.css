@@ -1,0 +1,19 @@
+body {
+  font-family: sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.buttons {
+  margin: 0.5rem 0;
+}
+
+button {
+  margin-right: 0.5rem;
+}

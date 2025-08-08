@@ -13,16 +13,15 @@ This repository is a playground for showcasing web capabilities using **HTML**, 
 - [Infinite scroll content loading using Intersection Observer API](infinite-scroll/)
 - [Clipboard copy and paste demo](clipboard/)
 - [Web Notifications with permission request](web-notifications/)
+- [Web Speech API demo with text-to-speech, speech-to-text, and offline caching](web-speech/)
+- [File upload with live preview (images, text, PDFs)](file-upload-preview/)
+- [Geolocation API to display user’s current location on a map](geolocation/)
+- [Dark mode toggle with prefers-color-scheme](dark-mode-toggle/)
+- [Custom context menu](custom-context-menu/)
 
 ## Planned Showcases
 
 
-	•	Dark mode / light mode toggle with prefers-color-scheme support
-	•	Custom context menu with JavaScript event handling
-	•	File upload with live preview (images, text, PDFs)
-	•	Geolocation API to display user’s current location on a map
-	•	Web Speech API for text-to-speech and speech-to-text
-	•	Offline caching using Service Workers
 	•	CSS grid-based responsive image masonry layout
 	•	Keyboard shortcut handling for faster navigation
 	•	LocalStorage and SessionStorage for saving user preferences
