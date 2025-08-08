@@ -11,6 +11,8 @@ This repository is a playground for showcasing web capabilities using **HTML**, 
 - [Fetch API example retrieving GitHub user data](github-fetch/)
 - [Simple drag‑and‑drop interface](drag-and-drop/)
 - [Infinite scroll content loading using Intersection Observer API](infinite-scroll/)
+- [Clipboard copy and paste demo](clipboard/)
+- [Web Notifications with permission request](web-notifications/)
 - [Web Speech API demo with text-to-speech, speech-to-text, and offline caching](web-speech/)
 - [File upload with live preview (images, text, PDFs)](file-upload-preview/)
 - [Geolocation API to display user’s current location on a map](geolocation/)
@@ -20,8 +22,6 @@ This repository is a playground for showcasing web capabilities using **HTML**, 
 ## Planned Showcases
 
 
-	•	Clipboard API for copy and paste functionality
-	•	Web Notifications API with permission handling
 	•	CSS grid-based responsive image masonry layout
 	•	Keyboard shortcut handling for faster navigation
 	•	LocalStorage and SessionStorage for saving user preferences

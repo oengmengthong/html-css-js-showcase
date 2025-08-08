@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 1rem;
+  background-color: #fafafa;
+  color: #333;
+  text-align: center;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+}
+
+#status {
+  margin-top: 0.5rem;
+}
