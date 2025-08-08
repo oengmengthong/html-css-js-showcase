@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Validation Showcase</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Sign Up</h1>
+  <form id="signup-form" novalidate>
+    <label for="username">Username
+      <input type="text" id="username" name="username" required minlength="3" aria-describedby="username-help" />
+    </label>
+    <small id="username-help">At least 3 characters</small>
+
+    <label for="email">Email
+      <input type="email" id="email" name="email" required />
+    </label>
+
+    <label for="password">Password
+      <input type="password" id="password" name="password" required minlength="8"
+        pattern="(?=.*[A-Z])(?=.*\\d)[A-Za-z\\d]{8,}" />
+    </label>
+    <small>Use 8+ characters with an uppercase letter and a number.</small>
+
+    <label for="confirmPassword">Confirm Password
+      <input type="password" id="confirmPassword" name="confirmPassword" required />
+    </label>
+
+    <button type="submit">Register</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
